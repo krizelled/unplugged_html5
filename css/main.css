@@ -354,15 +354,104 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0
+  }
+
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    display: flex;
+    width:
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    margin: 50px 0;
+    justify-content: space-between;
+    align-content: flex-startl
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  faq-content {
+    display: flex;
+    flex-basis:
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
 }
 
 /* ==========================================================================

@@ -89,6 +89,52 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+html {
+  font-size: 1rem;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+
+}
+
+a {
+  color : #e2e3ed;
+  text-decoration: none;
+
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -103,11 +149,11 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 .header-divider {
@@ -164,6 +210,7 @@ footer .social-icons {
 
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
+
 
 /* HERO AREA */
 
@@ -245,6 +292,10 @@ aside {
    FAQ Page
    ========================================================================== */
 
+.faq {
+  display: flex;
+  justify-content: center;
+}
   
 .faq .content-wrapper {
   display: flex;
@@ -262,7 +313,6 @@ aside {
 .faq-content {
   margin-bottom: 50px;
 }
-
 
 
 /* ==========================================================================
@@ -347,6 +397,7 @@ aside {
   clear: both;
 }
 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -356,17 +407,20 @@ aside {
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
 
+/* General styles */
 .content-wrapper {
   max-width: 640px;
-  margin: 100px 0
+  margin: 100px 0;
 }
+
+  /* Header */
+
 
 header {
   padding: 33px 0;
 }
 
 header .content-wrapper {
-  display: flex;
   width: 100%;
   justify-content: space-between;
 }
@@ -388,10 +442,10 @@ header nav ul {
   /* Aside */
 
 aside .content-wrapper {
-  display: flex;
   margin: 50px 0;
+  display: flex;
   justify-content: space-between;
-  align-content: flex-startl
+  align-content: flex-start;
 }
 
 aside .content-wrapper .form-description,
@@ -410,7 +464,7 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
 }
 
 /* Reviews */
@@ -442,7 +496,7 @@ footer .contact {
 }
 
 footer .copyright {
-  width: 100%;
+  width: 100%;  
 }
 
 
@@ -488,11 +542,11 @@ About Page
 }
 
 
-
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
 
   /* General Styles */
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -539,6 +593,7 @@ About Page
   .mission h2, .contact-section .content-wrapper h2 {
     width: 95%;
   }
+
   
 /* ==========================================================================
      FAQ Page
@@ -546,7 +601,8 @@ About Page
 
   .faq h2 {
     width: 100%;
-  }   
+  }
+
 }
 
 /* ==========================================================================

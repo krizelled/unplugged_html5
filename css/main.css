@@ -140,10 +140,19 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
-}   
+}
+
 /*-------------------BASE HEADER - FOOTER STYLES ----------------------*/
    
 
@@ -152,6 +161,7 @@ header {
   justify-content: center;
   padding: 15px 0;
   background-color: #202322;
+
 }
 
 header .content-wrapper {
@@ -226,12 +236,20 @@ footer .social-icons {
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
+header figure {
+  width: 60%;
+}
 
 /* HERO AREA */
 
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url('../css/unplugged-retreat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat #333;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -280,6 +298,9 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../css/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
